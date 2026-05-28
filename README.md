@@ -71,6 +71,14 @@ The repository is currently being structured into a modular security-focused IoT
 
 This project explores the balance between strong security and computational efficiency in IoT systems. The implementation emphasizes lightweight operations suitable for low-power devices while maintaining resistance against common communication attacks.
 
+## Contributors
+
+- Rhythm Sharma
+- Harshil Srivastava
+- Sankalp Tripathi
+- Mayank Singh
+- Palla Pranavi
+
 ## License
 
 This project is licensed under the MIT License.
