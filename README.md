@@ -26,6 +26,7 @@ The framework is designed to address major IoT communication threats including:
 - Lightweight authentication vulnerabilities
 
 ## Architecture Overview
+![DLKS-MQTT Architecture](assets/architecture.png)
 
 The project follows a layered architecture consisting of:
 
