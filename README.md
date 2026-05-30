@@ -4,82 +4,123 @@ DLKS-MQTT is a lightweight secure communication framework designed for MQTT-base
 
 The framework is inspired by lightweight cryptographic principles optimized for low-power IoT ecosystems such as smart homes, healthcare monitoring systems, industrial IoT (IIoT), and sensor-based networks.
 
-## Key Features
+---
 
-- Lightweight ephemeral session key generation using Linear Congruential Generator (LCG)
-- MQTT-based secure communication workflow
-- Replay attack mitigation using nonce validation
-- Message integrity verification using lightweight hashing
-- Reduced communication and computational overhead
-- Designed for resource-constrained IoT nodes
-- Secure handshake mechanism integrated into MQTT communication flow
-- Comparative performance analysis against traditional lightweight MQTT security approaches
+## ✨ Key Features
 
-## Security Objectives
+* Lightweight ephemeral session key generation using Linear Congruential Generator (LCG)
+* MQTT-based secure communication workflow
+* Replay attack mitigation using nonce validation
+* Message integrity verification using lightweight hashing
+* Reduced communication and computational overhead
+* Designed for resource-constrained IoT nodes
+* Secure handshake mechanism integrated into MQTT communication flow
+* Comparative performance analysis against traditional lightweight MQTT security approaches
+
+---
+
+## 🔐 Security Objectives
 
 The framework is designed to address major IoT communication threats including:
 
-- Man-in-the-Middle (MitM) attacks
-- Replay attacks
-- Unauthorized session reuse
-- Message tampering
-- Lightweight authentication vulnerabilities
+* Man-in-the-Middle (MitM) attacks
+* Replay attacks
+* Unauthorized session reuse
+* Message tampering
+* Lightweight authentication vulnerabilities
 
-## Architecture Overview
+---
+
+## 🏗️ Architecture Overview
+
 ![DLKS-MQTT Architecture](assets/architecture.png)
 
 The project follows a layered architecture consisting of:
 
-1. Processing Layer  
-   Handles key generation and cryptographic operations.
+### Processing Layer
 
-2. Security Logic Layer  
-   Manages ephemeral session keys, hashing, and authentication workflows.
+Handles key generation and cryptographic operations.
 
-3. Data Interaction Layer  
-   Controls MQTT communication and input/output handling.
+### Security Logic Layer
 
-4. Evaluation Layer  
-   Performs performance monitoring and visualization analysis.
+Manages ephemeral session keys, hashing, and authentication workflows.
 
-## Technologies Used
+### Data Interaction Layer
 
-- MQTT Protocol
-- Lightweight Cryptography
-- C Programming
-- Python (for analysis/visualization)
-- BLAKE2s Hashing
-- Linear Congruential Generator (LCG)
-- Contiki OS
-- Cooja Simulator
+Controls MQTT communication and input/output handling.
 
-## Current Development Status
+### Evaluation Layer
 
-🚧 Under active development and refinement.
+Performs performance monitoring and visualization analysis.
+
+---
+
+## ⚙️ Technologies Used
+
+* MQTT Protocol
+* Lightweight Cryptography
+* C Programming
+* Python (for analysis and visualization)
+* BLAKE2s Hashing
+* Linear Congruential Generator (LCG)
+* Contiki OS
+* Cooja Simulator
+
+---
+
+## 🚧 Current Development Status
 
 The repository is currently being structured into a modular security-focused IoT framework with implementation, simulation, benchmarking, and visualization support.
 
-## Planned Enhancements
+Planned additions include:
 
-- Real-time MQTT broker simulation
-- Interactive monitoring dashboard
-- Machine learning-based anomaly detection
-- Dockerized deployment support
-- Cross-protocol IoT security extensions
-- Post-quantum lightweight cryptographic experimentation
+* Real-time MQTT broker simulation
+* Interactive monitoring dashboard
+* Machine learning-based anomaly detection
+* Dockerized deployment support
+* Cross-protocol IoT security extensions
+* Post-quantum lightweight cryptographic experimentation
 
-## Research Context
+---
+
+## 📊 Research Context
 
 This project explores the balance between strong security and computational efficiency in IoT systems. The implementation emphasizes lightweight operations suitable for low-power devices while maintaining resistance against common communication attacks.
 
-## Contributors
+The framework is designed with a focus on:
 
-- Rhythm Sharma
-- Harshil Srivastava
-- Sankalp Tripathi
-- Mayank Singh
-- Palla Pranavi
+* Lightweight authentication
+* Secure MQTT communication
+* Reduced latency and overhead
+* IoT-specific attack mitigation
+* Scalable security architecture for constrained environments
 
-## License
+---
+
+## 📁 Repository Structure
+
+```bash
+dlks-mqtt/
+│
+├── assets/         # Architecture diagrams and visual assets
+├── docs/           # Technical documentation and project report
+├── src/            # Core implementation files
+├── results/        # Benchmarking and evaluation outputs
+└── README.md
+```
+
+---
+
+## 🤝 Contributors
+
+* Rhythm Sharma
+* Harshil Srivastava
+* Sankalp Tripathi
+* Mayank Singh
+* Palla Pranavi
+
+---
+
+## 📄 License
 
 This project is licensed under the MIT License.
