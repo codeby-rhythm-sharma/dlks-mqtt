@@ -1,51 +1,31 @@
-"""
-DLKS-MQTT Lightweight Session Key Generator
-
-This module implements lightweight ephemeral session key
-generation for secure MQTT-based IoT communication.
-
-Author: DLKS-MQTT Contributors
-"""
-
+import random
 import time
-import hashlib
+
 
 class LightweightSessionKeyGenerator:
-"""
-Lightweight ephemeral session key generation
-using a simple Linear Congruential Generator approach.
-"""
 
-```
-def __init__(self, seed=12345):
-    self.seed = seed
+    def __init__(self, seed=None):
 
-def generate_session_key(self):
-    """
-    Generate lightweight session key.
-    """
+        if seed is None:
+            seed = int(time.time())
 
-    current_time = int(time.time())
+        self.seed = seed
 
-    generated_value = (
-        (1103515245 * (self.seed + current_time) + 12345)
-        % (2**31)
-    )
+    def generate_key(self):
 
-    session_key = hashlib.blake2s(
-        str(generated_value).encode()
-    ).hexdigest()
+        random.seed(self.seed)
 
-    return session_key
-```
+        session_key = ''.join(
+            random.choice('0123456789ABCDEF')
+            for _ in range(32)
+        )
 
-if **name** == "**main**":
+        return session_key
 
-```
+
 generator = LightweightSessionKeyGenerator()
 
-key = generator.generate_session_key()
+key = generator.generate_key()
 
-print("Generated Lightweight Session Key:")
+print("Generated Session Key:")
 print(key)
-```

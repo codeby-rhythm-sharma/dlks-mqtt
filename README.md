@@ -110,6 +110,18 @@ dlks-mqtt/
 ```
 
 ---
+## Future Scope
+
+* Real-time MQTT broker deployment
+* Lightweight IoT node benchmarking
+* Secure edge-device communication testing
+* Dockerized simulation support
+* Cloud-integrated MQTT monitoring
+* AI-assisted anomaly detection for MQTT traffic
+
+## Academic Context
+
+This project was developed as part of an academic research-oriented exploration into lightweight IoT security frameworks and secure MQTT communication architectures for resource-constrained environments.
 
 ## 🤝 Contributors
 
