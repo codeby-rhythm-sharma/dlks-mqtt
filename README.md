@@ -1,8 +1,13 @@
 # DLKS-MQTT
 
-DLKS-MQTT is a lightweight secure communication framework designed for MQTT-based IoT environments. The project focuses on improving authentication, confidentiality, and integrity in resource-constrained devices by integrating ephemeral session key generation, lightweight hashing, and replay attack mitigation directly into the MQTT communication workflow.
+DLKS-MQTT (Dynamic Lightweight Key Sharing for MQTT) is a research-oriented IoT security framework designed to strengthen MQTT-based communication in resource-constrained environments through lightweight cryptographic mechanisms, secure authentication workflows, and attack-resistant communication protocols.
 
-The framework is inspired by lightweight cryptographic principles optimized for low-power IoT ecosystems such as smart homes, healthcare monitoring systems, industrial IoT (IIoT), and sensor-based networks.
+The framework integrates ephemeral 128-bit session key generation, nonce-based replay attack mitigation, lightweight hashing using BLAKE2s, and a secure MQTT handshake mechanism to enhance confidentiality, integrity, and authentication while maintaining minimal computational and communication overhead.
+
+Developed with a focus on low-power IoT ecosystems, DLKS-MQTT addresses critical security threats including Man-in-the-Middle (MitM) attacks, replay attacks, unauthorized session reuse, and message tampering. The framework is designed for deployment across smart homes, Industrial IoT (IIoT), healthcare monitoring systems, smart cities, and sensor-based networks where security and efficiency must coexist.
+
+Simulation and evaluation results demonstrate strong security characteristics while maintaining lightweight performance, achieving minimal communication overhead and efficient resource utilization suitable for constrained IoT devices.
+
 
 ---
 
