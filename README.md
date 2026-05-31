@@ -1,5 +1,7 @@
 # DLKS-MQTT
 
+Research-Oriented IoT Security Framework | MQTT | Lightweight Cryptography | IoT Authentication | Contiki OS | Cooja Simulator
+
 DLKS-MQTT (Dynamic Lightweight Key Sharing for MQTT) is a research-oriented IoT security framework designed to strengthen MQTT-based communication in resource-constrained environments through lightweight cryptographic mechanisms, secure authentication workflows, and attack-resistant communication protocols.
 
 The framework integrates ephemeral 128-bit session key generation, nonce-based replay attack mitigation, lightweight hashing using BLAKE2s, and a secure MQTT handshake mechanism to enhance confidentiality, integrity, and authentication while maintaining minimal computational and communication overhead.
