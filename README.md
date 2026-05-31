@@ -13,14 +13,13 @@ Simulation and evaluation results demonstrate strong security characteristics wh
 
 ## ✨ Key Features
 
-* Lightweight ephemeral session key generation using Linear Congruential Generator (LCG)
-* MQTT-based secure communication workflow
-* Replay attack mitigation using nonce validation
-* Message integrity verification using lightweight hashing
-* Reduced communication and computational overhead
-* Designed for resource-constrained IoT nodes
-* Secure handshake mechanism integrated into MQTT communication flow
-* Comparative performance analysis against traditional lightweight MQTT security approaches
+* Implemented lightweight 128-bit ephemeral session key generation for secure communication.
+* Protected against replay attacks through nonce validation mechanisms.
+* Mitigated Man-in-the-Middle (MitM) attacks using secure authentication workflows.
+* Achieved communication overhead of only 60 bytes while maintaining robust security properties.
+* Demonstrated CPU energy consumption of approximately 0.000002 mJ in simulated environments.
+* Evaluated using Contiki OS and Cooja Simulator for resource-constrained IoT deployments.
+
 
 ---
 
